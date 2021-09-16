@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,34 +7,74 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="container">
-            <div class="instructions">
-                <header>Coding Quiz Challenge</header>
-            <h1>Try to answer the following code-related questions within the time limit.</h1>
-            <h2>Keep in mind that incorrect answers will result in score/time penalties.</h2>
-           
-            <a href="questions.html"> Start Quiz</a>
-        </div>
 
-    </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Code Quiz Challenge</title>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="instructions">
-                <header>Coding Quiz Challenge</header>
-            <h1>Try to answer the following code-related questions within the time limit.</h1>
-            <h2>Keep in mind that incorrect answers will result in score/time penalties.</h2>
-           
-        </div>
 
+        <div class="popUps">
+            <nav class="banner">
+                <div><a id="viewHiScore" href="#">View High Scores</a></div>
+                <div id="timer">Timer: <span id="timer" >1:00</span></div>
+            </nav>
+        </div>
+<!--instructions on how to play-->        
+        <div class="startpage userMsg">
+            <h1>Coding Quiz Challenge</h1>
+                        <p id="userMsg">Try to answer the following code-related questions within the time limit. <br>Keep in mind that
+                            incorrect answers will penalize your score/time by ten seconds!</p>
+                            <button id="startButton" class="button">Start Quiz</button>
+                      </div>
+              
+        <div class="quizQuestions hide ">
+            <div class="userMsg">
+                 <h3 id="quizQuestionsTitle">sample</h3>
+        </div>        
+        
+        <div class="choices userMsg ">
+            <div><button class="button">1. <span id='but1'>sample</span> </button></div>
+            <div><button class="button">2. <span id='but2'>sample</span> </button></div>
+            <div><button class="button">3. <span id='but3'>sample</span></button></div>
+            <div><button class="button">4. <span id='but4'>sample</span></button></div>
+        </div>   
+        <div class="result">
+            <div class="correctAnswer hide">Correct!&#128515; </div>
+            <div class="wrongAnswer hide">Wrong! &#128542; </div>
+        </div>
+    </div>
+
+    <div class="yourResults hide">
+        <h3 class="userMsg">All Done!</h3>
+        <p class="userMsg">Your final score is <span id="finalScore">sample</span>%</p>
+        <div class="userName">
+            <label id="name" for="name"> Enter your Initials: </label>
+            <input id="initials" type="text">
+            <button id="submit" class="button">Submit</button>
+        </div>
+</div>
+
+<div id="wrapper">
+    <div class="footer">
+        <p id=footertext>Don't Quit!</p> 
+    </div>
+</div>
+
+
+<!--window to display high scores and to dump local storage high scores -->
+<div class="hiScores hide">
+<h3 class="userMsg">Recent Highscores:</h3>
+<div id="scores">
+</div>
+<div>
+    <button id="restartButton" class="button">Restart</button>
+    <button id="clearHighScores" class="button">Clear Highscores</button>
+</div>
+</div>
+
+
+</div>
+        
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src = "js/questions.js"></script>
+<script src="js/script.js"></script>
     </body>
->>>>>>> 07e7c5733cf7229296e20eab2b5d0b9fa78fc311
 </html>
