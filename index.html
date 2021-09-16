@@ -11,38 +11,43 @@
 
         <div class="popUps">
             <nav class="banner">
-                <div><a id="viewHiScore" href="#">View High Scores</a></div>
+                <div><a id="viewHighScore" href="#">View High Scores</a></div>
                 <div id="timer">Timer: <span id="timer" >1:00</span></div>
             </nav>
         </div>
 <!--instructions on how to play-->        
-        <div class="startpage userMsg">
+        <div class="startpage userMsg hide">
             <h1>Coding Quiz Challenge</h1>
                         <p id="userMsg">Try to answer the following code-related questions within the time limit. <br>Keep in mind that
                             incorrect answers will penalize your score/time by ten seconds!</p>
                             <button id="startButton" class="button">Start Quiz</button>
                       </div>
+
+        <div class="confirmPlay userMsg hide ">
+            <h3 class='userMsg'>Ready?</h3>
+            <button class="button">Go!</button>
+        </div>             
               
         <div class="quizQuestions hide ">
             <div class="userMsg">
-                 <h3 id="quizQuestionsTitle">sample</h3>
+                 <h3 id="quizQuestionsTitle">placeholder text</h3>
         </div>        
         
         <div class="choices userMsg ">
-            <div><button class="button">1. <span id='but1'>sample</span> </button></div>
-            <div><button class="button">2. <span id='but2'>sample</span> </button></div>
-            <div><button class="button">3. <span id='but3'>sample</span></button></div>
-            <div><button class="button">4. <span id='but4'>sample</span></button></div>
+            <div><button class="button">1. <span id='btn1'>placeholder text</span> </button></div>
+            <div><button class="button">2. <span id='btn2'>placeholder text</span> </button></div>
+            <div><button class="button">3. <span id='btn3'>placeholder text</span></button></div>
+            <div><button class="button">4. <span id='btn4'>placeholder text</span></button></div>
         </div>   
         <div class="result">
-            <div class="correctAnswer hide">Correct!&#128515; </div>
-            <div class="wrongAnswer hide">Wrong! &#128542; </div>
+            <div class="correctAnswer hide" id="buzzer hide">Correct!&#128515; </div>
+            <div class="wrongAnswer hide" id="buzzer hide">Wrong! You lost 10 seconds! &#128542; </div>
         </div>
     </div>
 
     <div class="yourResults hide">
         <h3 class="userMsg">All Done!</h3>
-        <p class="userMsg">Your final score is <span id="finalScore">sample</span>%</p>
+        <p class="userMsg">Your final score is <span id="finalScore">placeholder text</span>%</p>
         <div class="userName">
             <label id="name" for="name"> Enter your Initials: </label>
             <input id="initials" type="text">
