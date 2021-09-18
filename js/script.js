@@ -25,6 +25,7 @@ var clearHighScores = document.querySelector("#clearHighScores");
 var restartButton = document.querySelector("#restartButton");
 var scoreBoard = document.querySelector("#scores");
 
+
 let confirmPlayData=[]
 let score;
 let intervalId;
@@ -82,7 +83,7 @@ function loadData(x){
         }
 }
 
-//This records the results of each game to local storage so it can later be displayed in aggregate until it's cleared by the user
+//This records the results of each game to local storage
 function recordScore(x){
     let str;
     if (localStorage.getItem("keepScore") === null){
@@ -168,10 +169,9 @@ function evaluate(e){
     if (e.path[0].textContent === answer){
         setTimeout(()=>{
             correctAnswer.classList.remove("hide");
-            line.classList.remove("hide")
             setTimeout(()=>{
                 correctAnswer.classList.add("hide");
-                line.classList.add("hide")
+            
             },1000)
         },0)
         wrongAnswer.classList.add("hide");
@@ -184,10 +184,9 @@ function evaluate(e){
     } else {
         setTimeout(()=>{
             wrongAnswer.classList.remove("hide");
-            line.classList.remove("hide")
             setTimeout(()=>{
                 wrongAnswer.classList.add("hide");
-                line.classList.add("hide");
+            
             },1000)
         },0)
 
