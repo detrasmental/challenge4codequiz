@@ -38,6 +38,7 @@ function confirmStart(){
     confirmPlay.classList.remove("hide");
     confirmPlay.classList.add("show");
     document.querySelectorAll(".confirmPlay button")[0].addEventListener("click",go);
+    score = 0;
 };
 
 // Listeners start here
