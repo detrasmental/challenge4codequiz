@@ -31,6 +31,14 @@ let score;
 let intervalId;
 let scoreList=[];
 
+//Confirms with the user readiness to start the game, then runs ReadySetGo function
+function confirmStart(){
+    startpage.classList.add("hide");
+    startpage.classList.remove("show");
+    confirmPlay.classList.remove("hide");
+    confirmPlay.classList.add("show");
+    document.querySelectorAll(".confirmPlay button")[0].addEventListener("click",go);
+};
 
 // Listeners start here
 startpage.classList.remove("hide")
@@ -64,15 +72,6 @@ function go(e){
     startTimer()
     quizActual()
 }
-
-//Confirms with the user readiness to start the game, then runs ReadySetGo function
-function confirmStart(){
-    startpage.classList.add("hide");
-    confirmPlay.classList.remove("hide");
-    document.querySelectorAll(".confirmPlay button")[0].addEventListener("click",go);
-};
-
-
 
 //hides the confirm ready div and opens up the quizQuestions window
 
