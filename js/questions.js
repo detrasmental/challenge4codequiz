@@ -17,10 +17,10 @@ var questions = [
         answer: "alerts"
     },
     {
-        title: "The condition in an if/else statement is enclosed within_______",
-        choices: ["quotes", "square brackets", "parentheses", "curly brackets" 
+        title: "_______ is the process of finding errors and fixing them within a program.",
+        choices: ["Compiling", "Executing", "Debugging", "Scanning" 
         ],
-        answer: "parentheses"
+        answer: "Debugging"
     },
     {
         title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
